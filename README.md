@@ -27,3 +27,33 @@ A simple and interactive **News Application** that allows users to view, explore
 ---
 
 ## 📂 Project Structure
+newsApp/
+│── index.html
+│── style.css
+│── script.js
+│── assets/
+│── README.md
+
+
+---
+
+## ⚙️ How It Works
+
+1. Retrieves the current user from `localStorage`
+2. Displays user information dynamically
+3. Uses the Geolocation API to get user coordinates
+4. Loads or simulates news content
+5. Allows user interaction through messaging features
+
+---
+
+## 📍 Example Code
+
+```javascript
+navigator.geolocation.getCurrentPosition((position) => {
+  const lat = position.coords.latitude;
+  const lon = position.coords.longitude;
+
+  console.log("Latitude:", lat);
+  console.log("Longitude:", lon);
+});
